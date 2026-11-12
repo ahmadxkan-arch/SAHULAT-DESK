@@ -1,0 +1,156 @@
+import { UserCase } from "@/types";
+
+export const initialCases: UserCase[] = [
+  {
+    id: "case-101",
+    userId: "usr-demo-1",
+    serviceId: "cnic-renewal",
+    serviceTitle: "CNIC / Smart Card Renewal",
+    serviceCategory: "Identity & Civil",
+    city: "Islamabad",
+    purpose: "Job Application & Bank Account Verification",
+    applicantType: "Employed",
+    status: "Completed",
+    progressPercent: 100,
+    createdAt: "2026-10-15T09:30:00Z",
+    updatedAt: "2026-10-28T14:15:00Z",
+    targetDate: "2026-10-30",
+    trackingNumber: "NADRA-ISB-892144",
+    selectedDocumentIds: [
+      "doc-cnic-original",
+      "doc-cnic-copy",
+      "doc-father-cnic",
+      "doc-photos-passport"
+    ],
+    completedStepNumbers: [1, 2, 3, 4, 5],
+    notes: "New Smart CNIC delivered to residential address via Pakistan Post trackable parcel."
+  },
+  {
+    id: "case-102",
+    userId: "usr-demo-1",
+    serviceId: "domicile-certificate",
+    serviceTitle: "Domicile Certificate",
+    serviceCategory: "Identity & Civil",
+    city: "Lahore",
+    purpose: "University Admission Merit Quota",
+    applicantType: "Student",
+    status: "Under Review",
+    progressPercent: 80,
+    createdAt: "2026-11-02T11:00:00Z",
+    updatedAt: "2026-11-09T16:20:00Z",
+    targetDate: "2026-11-15",
+    trackingNumber: "EKM-LHR-55209",
+    selectedDocumentIds: [
+      "doc-cnic-copy",
+      "doc-father-cnic",
+      "doc-matric-sanad",
+      "doc-utility-bill",
+      "doc-photos-passport",
+      "doc-affidavit-stamp",
+      "doc-challan-paid"
+    ],
+    completedStepNumbers: [1, 2, 3, 4],
+    notes: "Tehsildar local revenue record verification completed. Awaiting final digital signature from Deputy Commissioner."
+  },
+  {
+    id: "case-103",
+    userId: "usr-demo-1",
+    serviceId: "driving-license",
+    serviceTitle: "Driving License (Learner & Permanent)",
+    serviceCategory: "Transport & Travel",
+    city: "Rawalpindi",
+    purpose: "Personal Commute",
+    applicantType: "Employed",
+    status: "Submitted",
+    progressPercent: 60,
+    createdAt: "2026-10-20T10:15:00Z",
+    updatedAt: "2026-11-08T09:40:00Z",
+    targetDate: "2026-12-05",
+    trackingNumber: "DLIMS-RWP-7714",
+    selectedDocumentIds: [
+      "doc-cnic-original",
+      "doc-cnic-copy",
+      "doc-photos-passport",
+      "doc-medical-fitness",
+      "doc-challan-paid"
+    ],
+    completedStepNumbers: [1, 2],
+    notes: "42-day mandatory learner permit cool-off period completed. Practical road test scheduled for next Tuesday at 9:00 AM."
+  },
+  {
+    id: "case-104",
+    userId: "usr-demo-1",
+    serviceId: "character-certificate",
+    serviceTitle: "Character Certificate",
+    serviceCategory: "Police & Verification",
+    city: "Islamabad",
+    purpose: "Foreign Study Visa (UK)",
+    applicantType: "Student",
+    status: "Ready to Submit",
+    progressPercent: 40,
+    createdAt: "2026-11-06T13:45:00Z",
+    updatedAt: "2026-11-10T12:00:00Z",
+    targetDate: "2026-11-18",
+    trackingNumber: "PKM-ISB-3091",
+    selectedDocumentIds: [
+      "doc-cnic-original",
+      "doc-cnic-copy",
+      "doc-photos-passport",
+      "doc-neighbor-witness",
+      "doc-utility-bill",
+      "doc-character-form"
+    ],
+    completedStepNumbers: [1],
+    notes: "All neighbor attestations signed. Ready to walk into F-6 Police Facilitation Center tomorrow morning."
+  },
+  {
+    id: "case-105",
+    userId: "usr-demo-1",
+    serviceId: "degree-verification",
+    serviceTitle: "HEC & IBCC Degree Attestation",
+    serviceCategory: "Education & Academics",
+    city: "Karachi",
+    purpose: "Employment Abroad (UAE Attestation)",
+    applicantType: "Employed",
+    status: "Documents Pending",
+    progressPercent: 20,
+    createdAt: "2026-11-09T15:20:00Z",
+    updatedAt: "2026-11-10T18:00:00Z",
+    targetDate: "2026-11-25",
+    trackingNumber: "HEC-KHI-19482",
+    selectedDocumentIds: [
+      "doc-cnic-copy",
+      "doc-degree-original",
+      "doc-matric-sanad",
+      "doc-inter-sanad",
+      "doc-challan-paid",
+      "doc-hec-application"
+    ],
+    completedStepNumbers: [1],
+    notes: "Waiting to receive original Matric Sanad duplicate from BISE board before submitting courier docket to HEC."
+  },
+  {
+    id: "case-106",
+    userId: "usr-demo-1",
+    serviceId: "tax-ntn-guidance",
+    serviceTitle: "National Tax Number (NTN) & FBR Active Taxpayer Status",
+    serviceCategory: "Taxation & Finance",
+    city: "Islamabad",
+    purpose: "Freelance Bank Account & Reduced Withholding Tax",
+    applicantType: "Self-Employed",
+    status: "Not Started",
+    progressPercent: 5,
+    createdAt: "2026-11-11T08:00:00Z",
+    updatedAt: "2026-11-11T08:00:00Z",
+    targetDate: "2026-11-20",
+    selectedDocumentIds: [
+      "doc-cnic-original",
+      "doc-utility-bill",
+      "doc-salary-slip",
+      "doc-tax-fbr-form"
+    ],
+    completedStepNumbers: [],
+    notes: "Checklist generated. Need to obtain consumer number from latest electricity bill."
+  }
+];
+
